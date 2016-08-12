@@ -1,0 +1,59 @@
+.timeline_wrapper {
+    height: 280px;
+    width: 1200px;
+    overflow: auto;
+    margin: 4px 0 0 10px;
+    padding: 0 8px;
+    .container {
+        position: relative;
+        height: 200px;
+        .main_line {
+            position: absolute;
+            left: 0px;
+            bottom: 10px;
+            border: 1px solid #dcdcdc;
+        }
+        .horizontal-line {
+            border-left: 1px solid #dcdcdc;
+            clear: both;
+            height: 8px;
+            position: absolute;
+            bottom: 2px;
+            width: 0;
+            .mark {
+                position: relative;
+            }
+            .year {
+                font-size: 14px;
+                position: absolute;
+                left: -18px;
+                top: 30px;
+            }
+            .month {
+                font-size: 12px;
+                position: absolute;
+                left: -4px;
+                top: 12px;
+            }
+        }
+        .event {
+            position: absolute;
+            border-left: 1px solid #dee2e9;
+            bottom: 12px;
+            .tit {
+                height: 22px;
+                line-height: 22px;
+                padding-left: 6px;
+                color: #ffffff;
+                font-size: 12px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+.tooltip-wrap {
+    position: absolute;
+    z-index: 9999;
+}
